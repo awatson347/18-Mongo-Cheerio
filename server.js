@@ -15,7 +15,7 @@
 	app.use(express.static('public')); // (create a public folder and land there)
 
 // = Database configuration ================================================
-	mongoose.connect('mongodb://localhost/mongoosescraper');
+	mongoose.connect('mongodb://heroku_sd4slt9h:hnlsddpggc70136c7prubllgs9@ds049641.mlab.com:49641/heroku_sd4slt9h');
 	var db = mongoose.connection;
 
 	db.on('error', function (err) {
