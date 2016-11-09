@@ -112,6 +112,10 @@ app.post('/articles/:id', function(req, res){
 
 
 
-app.listen(3008, function() {
-  console.log('App running on port 3008!');
-});
+var PORT = process.env.PORT || 3008;
+  
+//port listener
+app.listen(PORT, function(){
+    console.log("Now listening to Port: "+PORT)
+})
+
